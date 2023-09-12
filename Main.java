@@ -1,10 +1,14 @@
-public class Main
-{  
-  public static void main(String[] args)
+public class Main 
+{
+  public static void main(String[] args) 
   {
-    System.out.println("Hello, World!");
-    System.out.print("nice to meet you!");
+   final int age = 17; //final means this value can't be changed, int means this is an integer value
+   double number; //double means that this is a decimal value
+   number = 2; 
+   boolean sunny; //boolean means this is a true or false scenario
+   sunny = true;
+   System.out.println(age);
+   System.out.println(number);
+   System.out.print(sunny);
   }
 }
-    
-   
