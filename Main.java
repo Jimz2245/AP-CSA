@@ -3,14 +3,16 @@ public class Main
 {
   public static void main(String[] args) 
   {
-   final int age = 18; //final means this value can't be changed, int means this is an integer value
-   double fee; //double means that this is a decimal value
-   fee = 2.50; 
+   Scanner o = new Scanner(System.in);
+   System.out.print("Hello! Welcome to the entrance to Cup Pong, how old are you?");
+   final int age = o.nextInt(); //final means this value can't be changed, int means this is an integer value
    boolean open; //boolean means this is a true or false scenario
    open = true;
    System.out.println("you are "+age+" years old!");
+   System.out.println("What is the fee?");
+   final double fee = o.nextDouble();
    System.out.println("the fee is "+fee+" dollars");
-   System.out.println("it is"+open+" that the table is open");
+   System.out.println("Cup Pong is "+open+" that the table is open");
    System.out.println("Welcome to cup pong, please input your username!");
    System.out.println();
    Scanner sc = new Scanner(System.in);
