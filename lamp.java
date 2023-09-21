@@ -1,7 +1,7 @@
 public class lamp
 {
   private String color;
-  private Boolean lightBulb;
+  private Boolean on;
   public void lightUp()
   {
     System.out.print("It is now bright");
@@ -13,6 +13,10 @@ public class lamp
   public void ballJoint()
   {
     System.out.print("turns left");
+  }
+  public Boolean turnOnLamp()
+  {
+    return on;
   }
 }
   
