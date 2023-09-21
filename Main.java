@@ -32,5 +32,6 @@ public class Main
    
    lamp ywes = new lamp();
    ywes.lightUp();
+   System.out.println(ywes.turnOnLamp());
   }
 }
