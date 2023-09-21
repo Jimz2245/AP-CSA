@@ -29,5 +29,8 @@ public class Main
    double percent = (double)landed/(landed + missed);
    System.out.println("that means you have landed "+ 100*percent+" percent of your shots!"); 
    System.out.println("that is about "+(int)(100*percent + 0.5)+" percent!");
+   
+   lamp ywes = new lamp();
+   ywes.lightUp();
   }
 }
