@@ -7,15 +7,15 @@ public class Lamp
   
   public void lightUp()
   {
-    System.out.print("It is now bright");
+    System.out.println("It is now bright");
   }
-  public void electricity()
+  public void electricity(int i)
   {
-    System.out.print("now using your hard earned money on electricity");
+    System.out.println("now using " + i * 0.005 + "$ per second");
   }
   public void ballJoint()
   {
-    System.out.print("turns left");
+    System.out.println("turns left");
   }
   public void turnOnLamp()
   {
@@ -34,5 +34,9 @@ public class Lamp
    {
      return material;
    }
+  public void ballJoint(int h)
+  {
+    System.out.println("I turned left " + h + " times!");
+  }
 }
   

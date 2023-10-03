@@ -30,7 +30,10 @@ public class Main
    System.out.println("that means you have landed "+ 100*percent+" percent of your shots!"); 
    System.out.println("that is about "+(int)(100*percent + 0.5)+" percent!");
    Lamp ywes = new Lamp("black", "plastic", 57.5);
-   ywes.lightUp();
    ywes.turnOnLamp();
+   System.out.println("Hello, how much electricity are you using per second?");
+   int i = o.nextInt();
+   ywes.electricity(i);
+   ywes.ballJoint(7);
   }
 }
