@@ -35,5 +35,6 @@ public class Main
    int i = o.nextInt();
    ywes.electricity(i);
    ywes.ballJoint(7);
+   System.out.println(ywes.getColor());
   }
 }

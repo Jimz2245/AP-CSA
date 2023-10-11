@@ -38,5 +38,9 @@ public class Lamp
   {
     System.out.println("I turned left " + h + " times!");
   }
+  public String getColor()
+  {
+    return color;
+  }
 }
   
