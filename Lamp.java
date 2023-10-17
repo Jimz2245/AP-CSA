@@ -7,15 +7,15 @@ public class Lamp
   
   public void lightUp()
   {
-    System.out.println("It is now bright");
+    System.out.println("\"It is now bright\"");
   }
   public void electricity(int i)
   {
-    System.out.println("now using " + i * 0.005 + "$ per second");
+    System.out.println("\"now using " + i * 0.005 + "$ per second\"");
   }
   public void ballJoint()
   {
-    System.out.println("turns left");
+    System.out.println("\"turns left\"");
   }
   public void turnOnLamp()
   {
@@ -36,7 +36,7 @@ public class Lamp
    }
   public void ballJoint(int h)
   {
-    System.out.println("I turned left " + h + " times!");
+    System.out.println("\"I turned left " + h + " times!\"");
   }
   public String getColor()
   {
