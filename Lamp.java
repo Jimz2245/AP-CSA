@@ -42,5 +42,9 @@ public class Lamp
   {
     return color;
   }
+  public String toString()
+  {
+    return "\"I am very bright";
+  }
 }
   

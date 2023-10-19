@@ -36,5 +36,8 @@ public class Main
    ywes.electricity(i);
    ywes.ballJoint(7);
    System.out.println(ywes.getColor());
+   System.out.println(ywes + "\"!");
+   String lampp = "LIGHT LIGHT LIGHT";
+   System.out.println(lampp.substring(6));
   }
 }
