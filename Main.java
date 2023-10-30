@@ -39,5 +39,9 @@ public class Main
    System.out.println(ywes + "\"!");
    String lampp = "LIGHT LIGHT LIGHT";
    System.out.println(lampp.substring(6));
+   System.out.println("lets play another game, lets roll a die and if its 4-6 I win, but if it's 1-3 you win!");
+   int ran = 0;
+   ran = ((int)(Math.random()+1))*6;
+   System.out.println(ran);
   }
 }
