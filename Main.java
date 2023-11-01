@@ -24,6 +24,7 @@ public class Main
    System.out.println("You landed it!");
    cups--;
    landed++;
+   System.out.println(cups == (landed + missed));
    System.out.println("So far you have landed "+landed+" shots, and missed "+missed+" shots!");
    System.out.println(cups+" cups remain");
    double percent = (double)landed/(landed + missed);

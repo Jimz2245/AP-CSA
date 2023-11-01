@@ -47,4 +47,3 @@ public class Lamp
     return "\"I am very bright";
   }
 }
-  
