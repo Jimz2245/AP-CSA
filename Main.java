@@ -13,6 +13,14 @@ public class Main
      System.out.println("How much will I be accounting for you today?");
      final double bal = o.nextDouble();
      System.out.println("I will be managing "+bal+" dollars");
+     int bananas = 0;
+     double i = 0;
+     for(i = bal; i>=2; i-=2)
+     {
+      System.out.println(i);
+      bananas ++;
+     }
+     System.out.println("This may be off topic, but I could buy "+bananas+" banana(s) with that money!");
      System.out.println("For security purposes could I please get your name?");
      Scanner sc = new Scanner(System.in);
      String name = sc.nextLine();
@@ -31,11 +39,12 @@ public class Main
        System.out.println("How much do you spend on utilities?");
        Lamp ywes = new Lamp("black", "plastic", 57.5);
        ywes.turnOnLamp();
-       System.out.println("Hello, how much electricity are you using per second?");
-       int i = o.nextInt();
-       ywes.electricity(i);
+       System.out.println("Hello, how much time do u use a lamp in a day?");
+       int timeelec = o.nextInt();
+       double brightn = (ywes.getBrightness());
+       ywes.electricity(elec);
+       System.out.println("This costs you about $"+(elec * timelec *30)+" a day");
        ywes.ballJoint(7);
-       System.out.println(ywes.getColor());
        System.out.println(ywes + "\"!");
        String lampp = "LIGHT LIGHT LIGHT";
        System.out.println(lampp.substring(6));
@@ -63,6 +72,4 @@ public class Main
    }
   }  
 }
-    
- 
 
