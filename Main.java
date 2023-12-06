@@ -17,9 +17,9 @@ public class Main
      double i = 0;
      for(i = bal; i>=2; i-=2)
      {
-      System.out.println(i);
       bananas ++;
      }
+     System.out.println(i);
      System.out.println("This may be off topic, but I could buy "+bananas+" banana(s) with that money!");
      System.out.println("For security purposes could I please get your name?");
      Scanner sc = new Scanner(System.in);
@@ -42,15 +42,28 @@ public class Main
        System.out.println("Hello, how much time do u use a lamp in a day?");
        int timeelec = o.nextInt();
        double brightn = (ywes.getBrightness());
-       ywes.electricity(elec);
-       System.out.println("This costs you about $"+(elec * timelec *30)+" a day");
+       ywes.electricity(timeelec);
+       System.out.println("This costs you about $"+(timeelec * timeelec *30)+" a day");
        ywes.ballJoint(7);
-       System.out.println(ywes + "\"!");
-       String lampp = "LIGHT LIGHT LIGHT";
+       System.out.println("Wowzers that's a lot of money" + "\"!");
+       String lampp = "Sorry I cost so much :(";
        System.out.println(lampp.substring(6));
-       System.out.println("lets play another game, lets roll a die and if its 4-6 I win, but if it's 1-3 you win!");
+       System.out.println("how many days a week do you buy yourself a treat?");
+       int days = o.nextInt();
+       System.out.println("how many times a day do you buy yourself a treat?");
+       int perd = o.nextInt();
+       int total = 0;
+       for(int p =days; p>0; p--)
+       {
+         for(int j=perd; j>0; j--)
+         {
+           total += 5;
+         }
+         System.out.println("day " +p+ " you used "+total+" dollars!");
+       }
+       System.out.println("lets see how much of a discount my boss will let me give you today!");
        int ran = 0;
-       ran = ((int)(Math.random()+1))*6;
+       ran = ((int)(Math.random()*6));
        System.out.println(ran);
      }
      else
@@ -72,4 +85,3 @@ public class Main
    }
   }  
 }
-
