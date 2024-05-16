@@ -11,4 +11,8 @@ public class Acronym
   {
     return meaning;
   }
+  public String getName()
+  {
+    return name;
+  }
 }
