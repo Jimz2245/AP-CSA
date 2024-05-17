@@ -1,25 +1,20 @@
 import java.util.ArrayList;
 public class Translator
 {
-   public String getMeaning()
+  private static ArrayList<Acronym> list = new ArrayList<Acronym>();
+  public String translate(String word)
   {
-    return "placeholder";
-  }
-  ArrayList<String> list = new ArrayList<String>();
-  public String translate(String str)
-  {
-    for(String stri : list)
+    for(int i =0;i<list.size();i++)
     {
-      if(stri.equals(str))
+      if(word.equals(list.get(i).getName()))
       {
-        return "very cool";
+        return list.get(i).getMeaning();
       }
     } 
     return "Sorry, we cannot find this meaning :(";
   }
-  public String addMeaning (String str, String mean)
+  public void addMeaning (String str, String mean)
   {
-    new Acronym(str, mean);
-    return "aaah";
+    list.add(new Acronym(str, mean));
   }
 }
