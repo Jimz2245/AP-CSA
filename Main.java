@@ -11,8 +11,31 @@ public class Main
     proto.addMeaning("HML", "Home Made Lies");
     System.out.println(proto.translate("HML"));
     System.out.println(corpo.translate("HML"));
-    System.out.println("What meaning would you like to find?");
-    String str = sc.nextLine();
-    System.out.println(corpo.translate(str));
+    String po = "";
+    while(!po.equals( "Thank you for your time"));
+    {
+      System.out.println("Would you like to find or store?");
+      String str1= sc.nextLine();
+      if(str1.equals("find"))
+      {
+        System.out.println("What meaning would you like to find?");
+        String str = sc.nextLine();
+        System.out.println(corpo.translate(str1));
+      }
+      else if(str1.equals("store"))
+      {
+        System.out.println("What Acronym would you like to store?");
+        String str = sc.nextLine();
+        System.out.println("What is the meaning?");
+        String str2 = sc.nextLine();
+        corpo.addMeaning(str,str2);
+        System.out.println(corpo.translate(str));
+      }
+      else
+      {
+        System.out.println("Thank you for your time");
+        po = "Thank you for your time";
+      }
+    }
   }
 }
