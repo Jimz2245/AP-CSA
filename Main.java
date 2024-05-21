@@ -11,8 +11,8 @@ public class Main
     proto.addMeaning("HML", "Home Made Lies");
     System.out.println(proto.translate("HML"));
     System.out.println(corpo.translate("HML"));
-    String po = "";
-    while(!po.equals( "Thank you for your time"));
+    boolean yesyes = true;
+    while(yesyes)
     {
       System.out.println("Would you like to find or store?");
       String str1= sc.nextLine();
@@ -34,7 +34,7 @@ public class Main
       else
       {
         System.out.println("Thank you for your time");
-        po = "Thank you for your time";
+        yesyes = false;
       }
     }
   }
