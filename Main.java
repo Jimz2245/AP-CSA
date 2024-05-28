@@ -20,7 +20,7 @@ public class Main
       {
         System.out.println("What meaning would you like to find?");
         String str = sc.nextLine();
-        System.out.println(corpo.translate(str1));
+        System.out.println(corpo.translate(str ));
       }
       else if(str1.equals("store"))
       {

@@ -5,7 +5,7 @@ public class Acronym
   private String meaning;
   public Acronym(String str, String m)
   {
-    name = str;
+    name = str.toUpperCase();
     meaning = m;
   }
   public String getMeaning()
