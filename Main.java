@@ -9,12 +9,17 @@ public class Main
     Translator corpo = new Translator();
     Acronym HML = new Acronym("HML", "Home Made Lies");
     proto.addMeaning("HML", "Home Made Lies");
+    proto.addMeaning("kys", "Keep Yourself Safe");
+    proto.addMeaning("ICL", "I Carry Lies");
+    proto.addMeaning("LOL", "Lots of Love");
+    proto.addMeaning("JK", "Just Killing");
     System.out.println(proto.translate("HML"));
     System.out.println(corpo.translate("HML"));
     boolean yesyes = true;
     while(yesyes)
     {
       System.out.println("Would you like to find or store?");
+      
       String str1= sc.nextLine();
       if(str1.equals("find"))
       {
