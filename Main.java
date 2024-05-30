@@ -34,7 +34,6 @@ public class Main
         System.out.println("What is the meaning?");
         String str2 = sc.nextLine();
         corpo.addMeaning(str,str2);
-        System.out.println(corpo.translate(str));
       }
       else
       {
