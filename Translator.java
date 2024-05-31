@@ -32,7 +32,7 @@ public class Translator
     }
     else
     {
-      System.out.println("This acronym already exists");
+      System.out.println("This acronym already exists, please type \"update\"");
     }
   }
 }

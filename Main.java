@@ -19,13 +19,12 @@ public class Main
     while(yesyes)
     {
       System.out.println("Would you like to find or store?");
-      
       String str1= sc.nextLine();
       if(str1.equals("find"))
       {
         System.out.println("What meaning would you like to find?");
         String str = sc.nextLine();
-        System.out.println(corpo.translate(str ));
+        System.out.println(corpo.translate(str));
       }
       else if(str1.equals("store"))
       {
@@ -34,6 +33,21 @@ public class Main
         System.out.println("What is the meaning?");
         String str2 = sc.nextLine();
         corpo.addMeaning(str,str2);
+      }
+      else if(str1.equals("update"))
+      {
+        System.out.println("What Acronym would you like to update?");
+        String str3 = sc.nextLine();
+        if(corpo.translate(str3).equals("Sorry, we cannot find this meaning :("));
+        {
+          System.out.println("This acronym doesn't exist yet. Please type \"store\" instead");
+        }
+        else
+        {
+          System.out.println("What is the new meaning?");
+          String str2 = sc.nextLine();
+          corpo.addMeaning(str3,str2);
+        }
       }
       else
       {
