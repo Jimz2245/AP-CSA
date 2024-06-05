@@ -38,7 +38,7 @@ public class Main
       {
         System.out.println("What Acronym would you like to update?");
         String str3 = sc.nextLine();
-        if(corpo.translate(str3).equals("Sorry, we cannot find this meaning :("));
+        if(corpo.translate(str3).equals("Sorry, we cannot find this meaning"))
         {
           System.out.println("This acronym doesn't exist yet. Please type \"store\" instead");
         }
