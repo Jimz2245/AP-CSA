@@ -18,7 +18,7 @@ public class Main
     boolean yesyes = true;
     while(yesyes)
     {
-      System.out.println("Would you like to find or store?");
+      System.out.println("Would you like to find, update, or store?");
       String str1= sc.nextLine();
       if(str1.equals("find"))
       {
